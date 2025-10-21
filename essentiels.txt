@@ -1,0 +1,41 @@
+📦 INSTALLATION
+- Installer Python 3.10+ et pip
+- Créer un environnement virtuel (optionnel mais recommandé)
+- Installer discord.py : pip install -U discord.py
+
+🧠 STRUCTURE DU BOT
+- Créer un fichier bot.py
+- Initialiser le bot avec intents par défaut
+- Ajouter un événement on_ready pour synchroniser les commandes slash
+
+🎲 COMMANDE /roll
+- Importer random
+- Créer une commande slash /roll
+- Retourner un nombre aléatoire entre 1 et 6 avec un emoji 🎲
+
+🔐 SÉCURITÉ & TOKEN
+- Créer une application sur Discord Developer Portal
+- Ajouter un bot à l'application
+- Copier le token et le coller dans bot.run("TON_TOKEN_ICI")
+- Inviter le bot avec les bons scopes : applications.commands + bot
+
+🧪 TESTS & VALIDATION
+- Lancer le bot : python bot.py
+- Vérifier que /roll fonctionne dans un serveur où le bot est présent
+- Corriger les erreurs éventuelles (permissions, intents, etc.)
+
+📁 STRUCTURATION FUTURE
+- Créer un dossier cogs/ pour modulariser les commandes
+- Ajouter des commandes comme /ping, /help, /d20, etc.
+- Gérer les erreurs avec on_command_error ou app_commands.error
+
+🧩 EXTENSIONS POSSIBLES
+- Ajout d’Embeds pour styliser les réponses
+- Cooldowns, permissions, rôles
+- Intégration avec une base de données ou fichiers JSON
+- Logs et monitoring des commandes
+
+🔥 CONSEILS STYLISÉS
+- Toujours valider chaque commande dans un serveur test
+- Garder le code lisible, commenté, et modulaire
+- Ne jamais exposer ton token (utiliser .env ou config.json)
